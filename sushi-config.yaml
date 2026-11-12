@@ -244,14 +244,17 @@ extension:
 # `main`. Fixed versions only — never `current`/`dev` (the go-publish workflow and the convention
 # check reject floating versions; the dependency checker proposes bumps).
 dependencies:
-  # German base profiles (kerndatensatz-basis pins the same 1.5.4).
-  de.basisprofil.r4: 1.5.4
-  # MII cross-module meta package (kerndatensatz-basis pins the same 2026.0.0).
-  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.0
-  # R5→R4 cross-version extensions (kerndatensatz-basis pins the same 0.1.0).
-  # basis needs it for R5 extensions — for example Encounter.plannedStartDate;
-  # remove it if your module defines no R5 cross-version extensions.
-  hl7.fhir.uv.xver-r5.r4: 0.1.0
+  # Pins follow the MII bill of materials kerndatensatz-complete (sushi-config.yaml,
+  # main @ 2026-11-12): the 2027 ballot generation of the KDS modules.
+  # German base profiles.
+  de.basisprofil.r4: 1.6.0
+  # MII cross-module meta package.
+  de.medizininformatikinitiative.kerndatensatz.meta: 2027.0.0-ballot
+  # MII base module (Person, Fall, Diagnose, Prozedur) — the parent profiles of
+  # every KDS extension module.
+  de.medizininformatikinitiative.kerndatensatz.base: 2027.0.0-ballot
+  # hl7.fhir.uv.xver-r5.r4 deliberately not pinned: no R5 cross-version
+  # extensions in this module, and kerndatensatz-complete does not list it.
   # Canonical Resource Management Infrastructure — required by the CRMI
   # profiles claimed under meta.profile above (kerndatensatz-basis pins the
   # same 2.0.0).
