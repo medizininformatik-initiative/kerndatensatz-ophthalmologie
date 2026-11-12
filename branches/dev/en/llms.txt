@@ -1,0 +1,44 @@
+# de.medizininformatikinitiative.kerndatensatz.ophthalmologie#2028.0.0-alpha.1: MII Implementation Guide Ophthalmologie(en)
+
+## Pages
+
+* [Home](index.md)
+* [Examples](examples.md)
+* [Value Sets](value-sets.md)
+* [Profiles](profiles.md)
+* [UML Diagrams](uml-diagrams.md)
+* [Code Systems](code-systems.md)
+* [Translation Information](translationinfo.md)
+* [Capability Statements](capability-statements.md)
+* [Artifacts Summary](artifacts.md)
+* [Guidance for Implementers](implementer-guidance.md)
+* [Metadata Overview](metadata.md)
+* [Guidance for Researchers](researcher-guidance.md)
+* [Guidance](guidance.md)
+* [Extensions](extensions.md)
+* [Versioning](version-history.md)
+* [Security and Privacy](security-and-privacy.md)
+* [Changelog](changes.md)
+* [Operations](operations.md)
+* [Logical Models](logical-models.md)
+* [Search Parameters](search-parameters.md)
+* [Downloads](downloads.md)
+* [Rendering Artifacts (demo)](rendering-artifacts.md)
+
+## Resources
+
+### Resource Profiles
+
+* [Example Patient — template starter](StructureDefinition-example-patient.md)
+
+### ImplementationGuides
+
+* [MII Implementation Guide Ophthalmologie](ImplementationGuide-mii-ig-ophthalmologie.md)
+
+### Parameters
+
+* [mii-param-ophthalmologie-manifest](Parameters-mii-param-ophthalmologie-manifest.md)
+
+### Examples
+
+* [ExamplePatientInstance (Patient)](Patient-ExamplePatientInstance.md)
