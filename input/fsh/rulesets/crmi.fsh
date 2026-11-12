@@ -14,10 +14,10 @@
 // `…Instance` suffix.
 //
 // basis literals replaced by this repository's placeholders:
-//   "2019+ Medical Informatics Initiative (MII)" → "{{COPYRIGHT_START_YEAR}}+ …"
-//   the basis artifact-author contact email      → {{MODULE_AUTHOR_EMAIL}}
+//   "2019+ Medical Informatics Initiative (MII)" → "2026+ …"
+//   the basis artifact-author contact email      → thomas.debertshaeuser@charite.de
 // The approval date and the artifact topic stay RuleSet PARAMETERS (as in
-// basis); pass {{APPROVAL_DATE}} / {{TOPIC_NCI_CODE}} at the call site.
+// basis); pass 2026-11-12 / C16939 at the call site.
 // ─────────────────────────────────────────────────────────────────────────────
 
 // ── Resource-independent version policy ──────────────────────────────────────
@@ -38,14 +38,14 @@ RuleSet: CRMIVersionPolicyStrictInstance
 
 RuleSet: CRMICopyrightLabel
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-copyrightLabel"
-* ^extension[=].valueString = "{{COPYRIGHT_START_YEAR}}+ Medical Informatics Initiative (MII)"
+* ^extension[=].valueString = "2026+ Medical Informatics Initiative (MII)"
 
 RuleSet: CRMICopyrightLabelInstance
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-copyrightLabel"
-* extension[=].valueString = "{{COPYRIGHT_START_YEAR}}+ Medical Informatics Initiative (MII)"
+* extension[=].valueString = "2026+ Medical Informatics Initiative (MII)"
 
 // ── Approval date (StructureDefinition, CapabilityStatement, IG) ─────────────
-// Call with the module's approval date, e.g. `insert CRMIApprovalDate({{APPROVAL_DATE}})`.
+// Call with the module's approval date, e.g. `insert CRMIApprovalDate(2026-11-12)`.
 
 RuleSet: CRMIApprovalDate(approvalDate)
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/resource-approvalDate"
@@ -58,7 +58,7 @@ RuleSet: CRMIApprovalDateInstance(approvalDate)
 // ── Artifact topic (StructureDefinition, CapabilityStatement, IG, CS, VS) ────
 // MII codes module topics with the NCI Thesaurus. Call with the system and the
 // module's topic code, e.g.
-//   insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, {{TOPIC_NCI_CODE}})
+//   insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C16939)
 // Repeat the insert for each topic of the module.
 
 RuleSet: CRMIArtifactTopic(system, code)
@@ -70,7 +70,7 @@ RuleSet: CRMIArtifactTopicInstance(system, code)
 * extension[=].valueCodeableConcept.coding[+] = {system}#{code}
 
 // ── Artifact contributors ────────────────────────────────────────────────────
-// Author = the module author ({{MODULE_AUTHOR_EMAIL}}). Editor / reviewer /
+// Author = the module author (thomas.debertshaeuser@charite.de). Editor / reviewer /
 // endorser are the MII-wide governance bodies and apply to every KDS module —
 // the same values sushi-config.yaml sets on the IG resource. Adjust only if your
 // module's governance differs.
@@ -78,7 +78,7 @@ RuleSet: CRMIArtifactTopicInstance(system, code)
 RuleSet: CRMIArtifactContributors
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-author"
 * ^extension[=].valueContactDetail.telecom[+].system = #email
-* ^extension[=].valueContactDetail.telecom[=].value = "{{MODULE_AUTHOR_EMAIL}}"
+* ^extension[=].valueContactDetail.telecom[=].value = "thomas.debertshaeuser@charite.de"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-editor"
 * ^extension[=].valueContactDetail.name = "Taskforce Core Data Set"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-reviewer"
@@ -101,7 +101,7 @@ RuleSet: CRMIArtifactContributors
 RuleSet: CRMIArtifactContributorsInstance
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-author"
 * extension[=].valueContactDetail.telecom[+].system = #email
-* extension[=].valueContactDetail.telecom[=].value = "{{MODULE_AUTHOR_EMAIL}}"
+* extension[=].valueContactDetail.telecom[=].value = "thomas.debertshaeuser@charite.de"
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-editor"
 * extension[=].valueContactDetail.name = "Taskforce Core Data Set"
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-reviewer"

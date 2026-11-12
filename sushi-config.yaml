@@ -73,7 +73,7 @@
 
 # id pattern per the MII naming convention: mii-ig-<slug>
 # (for example, kerndatensatz-basis uses `mii-ig-base`).
-id: mii-ig-{{MODULE_SLUG}}
+id: mii-ig-ophthalmologie
 # Canonical pattern per the MII convention:
 # https://www.medizininformatik-initiative.de/fhir/modul-<slug>
 # (for example, kerndatensatz-basis uses
@@ -81,28 +81,28 @@ id: mii-ig-{{MODULE_SLUG}}
 # The final value is set per module; the publication WEBSITE deliberately
 # differs (GitHub Pages under the creating org — "canonical-mismatch" in the
 # publication setup). Do not point the canonical at github.io.
-canonical: https://www.medizininformatik-initiative.de/fhir/modul-{{MODULE_SLUG}}
+canonical: https://www.medizininformatik-initiative.de/fhir/modul-ophthalmologie
 # name pattern per the MII convention: MII_IG_<Name>
 # (for example, kerndatensatz-basis uses `MII_IG_Base`).
-name: MII_IG_{{MODULE_NAME}}
+name: MII_IG_Ophthalmologie
 # title pattern: "MII Implementation Guide <Title>" (for example,
 # kerndatensatz-basis uses "MII Implementation Guide Core Dataset Base").
-title: MII Implementation Guide {{MODULE_TITLE}}
-description: "{{MODULE_DESCRIPTION}}"
-status: active # draft | active | retired | unknown
+title: MII Implementation Guide Ophthalmologie
+description: "FHIR Implementation Guide of the Medical Informatics Initiative (MII) core dataset extension module Ophthalmology (Ophthalmologie)."
+status: draft # draft | active | retired | unknown
 # MII modules use CalVer YYYY.n.n (e.g. 2026.0.1) per the MII Module Release
 # Workflow — NOT SemVer. Only the template tooling repos use SemVer.
-version: "{{CALVER_VERSION}}"
+version: "2028.0.0-alpha.1"
 # packageId pattern per the MII naming convention:
 # de.medizininformatikinitiative.kerndatensatz.<slug> (for example,
 # kerndatensatz-basis uses de.medizininformatikinitiative.kerndatensatz.base).
-packageId: de.medizininformatikinitiative.kerndatensatz.{{MODULE_SLUG}}
+packageId: de.medizininformatikinitiative.kerndatensatz.ophthalmologie
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-copyrightYear: "{{COPYRIGHT_START_YEAR}}+"
+copyrightYear: "2026+"
 releaseLabel: Release
 license: CC-BY-4.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # Must equal the publication date; go-publish.yml validates this.
-date: "{{RELEASE_DATE}}"
+date: "2026-11-12"
 jurisdiction: urn:iso:std:iso:3166#DE "Germany" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 # NUM-DIZ takes over IG development and maintenance when MII funding ends
 # (end-2026), so NUM-DIZ is the publisher shown in the footer's
@@ -130,7 +130,7 @@ extension:
   # Date this release was approved by whoever governs the module
   # (for example, kerndatensatz-basis records 2024-03-07).
   - url: http://hl7.org/fhir/StructureDefinition/resource-approvalDate
-    valueDate: "{{APPROVAL_DATE}}"
+    valueDate: "2026-11-12"
   - url: http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability
     valueCode: shareable
   - url: http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability
@@ -145,21 +145,21 @@ extension:
   - url: http://hl7.org/fhir/StructureDefinition/package-source
     extension:
       - url: packageId
-        valueId: de.medizininformatikinitiative.kerndatensatz.{{MODULE_SLUG}}
+        valueId: de.medizininformatikinitiative.kerndatensatz.ophthalmologie
       - url: version
-        valueString: "{{CALVER_VERSION}}"
+        valueString: "2028.0.0-alpha.1"
       - url: uri
-        valueUri: https://www.medizininformatik-initiative.de/fhir/modul-{{MODULE_SLUG}}
+        valueUri: https://www.medizininformatik-initiative.de/fhir/modul-ophthalmologie
   # Year this release sequence became effective
   # (for example, kerndatensatz-basis records "2026").
   - url: http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod
     valuePeriod:
-      start: "{{CALVER_YEAR}}"
+      start: "2028"
   - url: http://hl7.org/fhir/StructureDefinition/artifact-author
     valueContactDetail:
       telecom:
         - system: email
-          value: "{{MODULE_AUTHOR_EMAIL}}"
+          value: "thomas.debertshaeuser@charite.de"
   # The MII-wide governance bodies below apply to every MII KDS module — for
   # example, kerndatensatz-basis records the same National Steering Committee as
   # reviewer and endorser. Adjust only if your module's governance differs.
@@ -213,7 +213,7 @@ extension:
   # name the same resource.
   - url: http://hl7.org/fhir/StructureDefinition/cqf-expansionParameters
     valueReference:
-      reference: Parameters/mii-param-{{MODULE_SLUG}}-manifest
+      reference: Parameters/mii-param-ophthalmologie-manifest
   # `semver` is what the MII modules record here even though MII module versions
   # are CalVer YYYY.n.n (which parses as three numeric fields) — for example,
   # kerndatensatz-basis records `semver`. Do not "correct" it without an
@@ -225,7 +225,7 @@ extension:
   - url: http://hl7.org/fhir/StructureDefinition/artifact-usage
     valueMarkdown: "Use this ImplementationGuide resource as a computable definition of all the parts of the corresponding module of the Medical Informatics Initiative core data set."
   - url: http://hl7.org/fhir/StructureDefinition/artifact-purpose
-    valueMarkdown: "Provide the computable publication unit for the MII Core Dataset {{MODULE_TITLE}} module, enabling implementers to discover, validate, version, and apply the specification consistently."
+    valueMarkdown: "Provide the computable publication unit for the MII Core Dataset Ophthalmologie module, enabling implementers to discover, validate, version, and apply the specification consistently."
   # Module topic(s), coded with the NCI Thesaurus (for example,
   # kerndatensatz-basis declares seven: C15607, C154624, C25218, C16960,
   # C25190, C81239, C25717 — verified against its main branch). Replace the
@@ -234,7 +234,7 @@ extension:
     valueCodeableConcept:
       coding:
         - system: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
-          code: "{{TOPIC_NCI_CODE}}"
+          code: "C16939"
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (for advanced use cases the value
@@ -244,14 +244,17 @@ extension:
 # `main`. Fixed versions only — never `current`/`dev` (the go-publish workflow and the convention
 # check reject floating versions; the dependency checker proposes bumps).
 dependencies:
-  # German base profiles (kerndatensatz-basis pins the same 1.5.4).
-  de.basisprofil.r4: 1.5.4
-  # MII cross-module meta package (kerndatensatz-basis pins the same 2026.0.0).
-  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.0
-  # R5→R4 cross-version extensions (kerndatensatz-basis pins the same 0.1.0).
-  # basis needs it for R5 extensions — for example Encounter.plannedStartDate;
-  # remove it if your module defines no R5 cross-version extensions.
-  hl7.fhir.uv.xver-r5.r4: 0.1.0
+  # Pins follow the MII bill of materials kerndatensatz-complete (sushi-config.yaml,
+  # main @ 2026-11-12): the 2027 ballot generation of the KDS modules.
+  # German base profiles.
+  de.basisprofil.r4: 1.6.0
+  # MII cross-module meta package.
+  de.medizininformatikinitiative.kerndatensatz.meta: 2027.0.0-ballot
+  # MII base module (Person, Fall, Diagnose, Prozedur) — the parent profiles of
+  # every KDS extension module.
+  de.medizininformatikinitiative.kerndatensatz.base: 2027.0.0-ballot
+  # hl7.fhir.uv.xver-r5.r4 deliberately not pinned: no R5 cross-version
+  # extensions in this module, and kerndatensatz-complete does not list it.
   # Canonical Resource Management Infrastructure — required by the CRMI
   # profiles claimed under meta.profile above (kerndatensatz-basis pins the
   # same 2.0.0).
@@ -294,7 +297,7 @@ dependencies:
 # separate scaffolding step); OPTIONAL entries your module does not need are
 # removed per docs/optional-pages.md.
 # Every `title:` below is also a msgid in the IG-level translation catalogue
-# input/translations/de/ImplementationGuide-mii-ig-{{MODULE_SLUG}}.po — if you
+# input/translations/de/ImplementationGuide-mii-ig-ophthalmologie.po — if you
 # add, rename or delete a page here, update that catalogue in the same commit,
 # or the German rendering falls back to the English title for that page.
 pages:
@@ -349,13 +352,13 @@ pages:
   # (ImplementationGuide-<id>.html); this entry gives it a hand-authored intro
   # — dependency table, cross-version analysis, global profiles, copyrights —
   # the kerndatensatz-basis idiom (ImplementationGuide-mii-ig-base.md there).
-  # BOTH this entry's key and the two source files carry {{MODULE_SLUG}} in
+  # BOTH this entry's key and the two source files carry ophthalmologie in
   # their NAME: like the IG-level .po catalogue, rename
-  # input/pagecontent/ImplementationGuide-mii-ig-{{MODULE_SLUG}}.md and its
+  # input/pagecontent/ImplementationGuide-mii-ig-ophthalmologie.md and its
   # German mirror under input/translations/de/pagecontent/ when you set your
   # slug (docs/recipes/create-a-new-module.md step 4). The CI self-check
   # substitutes and renames all of them for the template repo's own preview.
-  ImplementationGuide-mii-ig-{{MODULE_SLUG}}.md:
+  ImplementationGuide-mii-ig-ophthalmologie.md:
     title: MII ImplementationGuide Resource
 
   translationinfo.md:
@@ -440,7 +443,7 @@ parameters:
   # with the cqf-expansionParameters extension above and with the file in
   # input/resources/ — see input/resources/README.md.
   path-expansion-params: '../../input/resources/Parameters-expansion-manifest.json'
-  pin-manifest: 'mii-param-{{MODULE_SLUG}}-manifest'
+  pin-manifest: 'mii-param-ophthalmologie-manifest'
   suppress-mappings:
     - http://hl7.org/v3
     - http://hl7.org/v3/cda
@@ -457,7 +460,7 @@ parameters:
   # FHIR validation test cases (for example, kerndatensatz-basis does the same).
   # A minimal working harness ships in
   # tests/profiles/ — see tests/README.md. It stays COMMENTED OUT in the template
-  # repo: the fixtures' canonicals still carry {{MODULE_SLUG}}, which the CI
+  # repo: the fixtures' canonicals still carry ophthalmologie, which the CI
   # self-check substitution does not reach (it rewrites sushi-config.yaml, ig.ini
   # and the narrative pages only). Replace the placeholders in tests/profiles/,
   # then uncomment:

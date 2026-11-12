@@ -11,14 +11,14 @@
 > **Optional page (0..1).** The KDS module menu lists this page as *optional*.
 > Decide for your module: **keep** it — fill it in and delete this banner and
 > the `OPTIONAL-PAGE` marker comment (in this file AND the German mirror) — or
-> **remove** it, following the per-entry procedure in [`docs/optional-pages.md`](https://github.com/{{GITHUB_ORG}}/{{REPO_NAME}}/blob/main/docs/optional-pages.md)
+> **remove** it, following the per-entry procedure in [`docs/optional-pages.md`](https://github.com/medizininformatik-initiative/kerndatensatz-ophthalmologie/blob/main/docs/optional-pages.md)
 > of this repository. A release must not ship with this banner (convention
 > check M9).
 {: .ig-highlight .ig-highlight-grey}
 
 ### Value Sets
 
-This page describes the ValueSets of the **{{MODULE_TITLE}}** module (naming
+This page describes the ValueSets of the **Ophthalmologie** module (naming
 convention `MII_VS_<Module>_<Name>`). For general guidance on using codes, see
 [FHIR Terminology](http://hl7.org/fhir/R4/terminologies.html); the code systems
 the sets draw from are described on the [Code Systems](code-systems.html) page.

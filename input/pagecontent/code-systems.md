@@ -10,14 +10,14 @@
 > **Optional page (0..1).** The KDS module menu lists this page as *optional*.
 > Decide for your module: **keep** it — fill it in and delete this banner and
 > the `OPTIONAL-PAGE` marker comment (in this file AND the German mirror) — or
-> **remove** it, following the per-entry procedure in [`docs/optional-pages.md`](https://github.com/{{GITHUB_ORG}}/{{REPO_NAME}}/blob/main/docs/optional-pages.md)
+> **remove** it, following the per-entry procedure in [`docs/optional-pages.md`](https://github.com/medizininformatik-initiative/kerndatensatz-ophthalmologie/blob/main/docs/optional-pages.md)
 > of this repository. A release must not ship with this banner (convention
 > check M9).
 {: .ig-highlight .ig-highlight-grey}
 
 ### Code Systems
 
-This page describes the CodeSystems of the **{{MODULE_TITLE}}** module (naming
+This page describes the CodeSystems of the **Ophthalmologie** module (naming
 convention `MII_CS_<Module>_<Name>`). The ValueSets built on them are described
 on the [Value Sets](value-sets.html) page.
 

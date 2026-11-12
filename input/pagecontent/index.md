@@ -12,7 +12,7 @@
 ### Introduction
 
 This specification describes the FHIR representation of the Core Dataset (CDS)
-module **{{MODULE_TITLE}}** of the Medical Informatics Initiative (MII). It
+module **Ophthalmologie** of the Medical Informatics Initiative (MII). It
 covers the module's use cases and the associated FHIR profiles, extensions and
 terminology resources in their normative form. The MII Core Dataset enables the
 standardized secondary use of routine clinical data for medical research.
@@ -23,8 +23,8 @@ standardized secondary use of routine clinical data for medical research.
 
 | Publication |               |
 |-------------|---------------|
-| Date        | {{RELEASE_DATE}} |
-| Version     | {{CALVER_VERSION}} (CalVer `YYYY.n.n`) |
+| Date        | 2026-11-12 |
+| Version     | 2028.0.0-alpha.1 (CalVer `YYYY.n.n`) |
 | Status      | active        |
 | Realm       | DE            |
 
@@ -53,7 +53,7 @@ standardized secondary use of routine clinical data for medical research.
 - **[Profiles](profiles.html)** and the further
   **[artifact pages](artifacts.html)** — the technical artifacts.
 - **[Examples](examples.html)** — example instances.
-- **[Dependencies](ImplementationGuide-mii-ig-{{MODULE_SLUG}}.html)** — the
+- **[Dependencies](ImplementationGuide-mii-ig-ophthalmologie.html)** — the
   ImplementationGuide resource with the dependency table, cross-version
   analysis and copyright statements.
 
@@ -84,7 +84,7 @@ Questions about this publication can be asked on the HL7 FHIR Zulip
 on the MII Zulip [mii.zulipchat.com](https://mii.zulipchat.com/) in the
 `MII-Kerndatensatz` stream.
 Comments and issues are welcome as *Issues* on
-[GitHub](https://github.com/{{GITHUB_ORG}}/{{REPO_NAME}}/issues).
+[GitHub](https://github.com/medizininformatik-initiative/kerndatensatz-ophthalmologie/issues).
 
 > [TODO: Name your module's domain contacts.]
 {: .ig-highlight .ig-highlight-grey}
@@ -96,7 +96,7 @@ Comments and issues are welcome as *Issues* on
 
 ### Copyright and License
 
-© {{COPYRIGHT_START_YEAR}}+ TMF e. V., Charlottenstraße 42, 10117 Berlin
+© 2026+ TMF e. V., Charlottenstraße 42, 10117 Berlin
 
 This work is licensed under the
 [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).

@@ -11,14 +11,14 @@
 > *optional*. Entscheiden Sie für Ihr Modul: Seite **behalten** — Inhalte
 > ausfüllen und dieses Banner samt `OPTIONAL-PAGE`-Marker-Kommentar löschen (in
 > dieser Datei UND in der englischen Quellseite) — oder Seite **entfernen**,
-> nach der Schritt-für-Schritt-Anleitung in [`docs/optional-pages.md`](https://github.com/{{GITHUB_ORG}}/{{REPO_NAME}}/blob/main/docs/optional-pages.md) dieses
+> nach der Schritt-für-Schritt-Anleitung in [`docs/optional-pages.md`](https://github.com/medizininformatik-initiative/kerndatensatz-ophthalmologie/blob/main/docs/optional-pages.md) dieses
 > Repositories. Ein Release darf dieses Banner nicht enthalten
 > (Konventions-Check M9).
 {: .ig-highlight .ig-highlight-grey}
 
 ### CodeSystems
 
-Diese Seite beschreibt die CodeSystems des Moduls **{{MODULE_TITLE}}**
+Diese Seite beschreibt die CodeSystems des Moduls **Ophthalmologie**
 (Namenskonvention `MII_CS_<Modul>_<Name>`). Die darauf aufbauenden ValueSets
 beschreibt die Seite [ValueSets](value-sets.html).
 

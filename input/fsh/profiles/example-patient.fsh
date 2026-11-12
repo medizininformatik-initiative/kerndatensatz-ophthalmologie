@@ -50,12 +50,15 @@ Description: "Minimal example profile shipped with the template so that a newly 
 * insert CRMIVersionPolicyStrict
 * insert CRMIPackageSourceDefinitionalResource
 * insert CRMIArtifactUsageProfile
-* insert CRMIApprovalDate({{APPROVAL_DATE}})
+* insert CRMIApprovalDate(2026-11-12)
 * insert CRMIResourceEffectivePeriod
-* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, {{TOPIC_NCI_CODE}})
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C16939)
 * insert CRMIArtifactContributors
 * ^status = #active
 * ^experimental = false
+// CRMIPublishable requires StructureDefinition.date; the IG Publisher would fill
+// it from the IG, but the HL7 validator in CI reads fsh-generated/ directly.
+* ^date = "2026-11-12"
 // Keep at least one identifying element required + Must-Support so the profile
 // is meaningful; add your module's real constraints below.
 * name 1..* MS

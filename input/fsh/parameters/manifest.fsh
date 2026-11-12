@@ -17,7 +17,7 @@
 // still resolve. See input/resources/README.md for the version table.
 // ─────────────────────────────────────────────────────────────────────────────
 
-// Instance: mii-param-{{MODULE_SLUG}}-manifest
+// Instance: mii-param-ophthalmologie-manifest
 // InstanceOf: Parameters
 // Title: "Parameters for terminology selection of SNOMED CT"
 // Description: "This parameter resource is used to specify the system version of SNOMED CT to be used in the terminology service."

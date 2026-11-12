@@ -24,7 +24,7 @@ Title: "Example: Max Mustermann-Testpatient"
 Description: "Synthetic example for the Example Patient profile. Entirely artificial data."
 * insert TestDataLabel
 * insert CRMIPackageSource
-* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/modul-{{MODULE_SLUG}}/StructureDefinition/example-patient)
+* insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/modul-ophthalmologie/StructureDefinition/example-patient)
 * name.family = "Mustermann-Testpatient"
 * name.given = "Max"
 * gender = #male
