@@ -3,7 +3,7 @@ MII_IG_Ophthalmologie : Validation Results
 
 err = 0, warn = 15, info = 124
 IG Publisher Version: 2.3.2 Out of date - current version is 3.0.3
-Generated Thu Nov 12 15:46:23 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.ophthalmologie#2028.0.0-alpha.1 (canonical = https://www.medizininformatik-initiative.de/fhir/modul-ophthalmologie)
+Generated Thu Nov 12 15:49:52 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.ophthalmologie#2028.0.0-alpha.1 (canonical = https://www.medizininformatik-initiative.de/fhir/modul-ophthalmologie)
  Build Errors : 0 / 6 / 0
  /home/runner/work/kerndatensatz-ophthalmologie/kerndatensatz-ophthalmologie/fsh-generated/resources/ImplementationGuide-mii-ig-ophthalmologie : 0 / 6 / 45
  /home/runner/work/kerndatensatz-ophthalmologie/kerndatensatz-ophthalmologie/fsh-generated/resources/Patient-ExamplePatientInstance : 0 / 1 / 2
