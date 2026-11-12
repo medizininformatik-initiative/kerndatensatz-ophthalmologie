@@ -3,7 +3,7 @@
      German mirror: input/translations/de/pagecontent/capability-statements.md. -->
 ### Capability Statements
 
-The CapabilityStatements of the **{{MODULE_TITLE}}** module describe the expected server/client capabilities (supported resources and interactions).
+The CapabilityStatements of the **Ophthalmologie** module describe the expected server/client capabilities (supported resources and interactions).
 
 > [TODO: Link to your module's CapabilityStatement(s), or delete this page.]
 {: .ig-highlight .ig-highlight-grey}

@@ -2,11 +2,11 @@
 <!-- Deutsche Übersetzung von input/pagecontent/profiles.md (aufgeteilt aus der
      früheren Kombi-Seite profiles-and-extensions.md gemäß der abgestimmten
      TF-KDS-Menüstruktur — eine Seite je Artefakt-Typ). -->
-Diese Seite listet die FHIR-Profile des Moduls **{{MODULE_TITLE}}**. Als
+Diese Seite listet die FHIR-Profile des Moduls **Ophthalmologie**. Als
 Ausgangspunkt liefert die Vorlage ein minimales Beispielprofil,
 [Example Patient](StructureDefinition-example-patient.html) — ersetzen Sie es
 durch die Profile Ihres Moduls (Namenskonvention `MII_PR_<Modul>_<Name>`, siehe
-[`docs/recipes/add-a-profile.md`](https://github.com/{{GITHUB_ORG}}/{{REPO_NAME}}/blob/main/docs/recipes/add-a-profile.md) in diesem Repository sowie die
+[`docs/recipes/add-a-profile.md`](https://github.com/medizininformatik-initiative/kerndatensatz-ophthalmologie/blob/main/docs/recipes/add-a-profile.md) in diesem Repository sowie die
 MII-Namenskonventionen). Die Extensions des Moduls stehen auf der Seite
 [Extensions](extensions.html).
 

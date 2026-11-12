@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD041 -->
 
-Technische Hinweise für DIZ-Implementierende zur Umsetzung der Profile des Moduls **{{MODULE_TITLE}}** (ETL aus Primärsystemen, FHIR-API, Validierung).
+Technische Hinweise für DIZ-Implementierende zur Umsetzung der Profile des Moduls **Ophthalmologie** (ETL aus Primärsystemen, FHIR-API, Validierung).
 
 > [TODO: Beschreiben Sie die technischen Umsetzungsschritte für Ihr Modul.]
 {: .ig-highlight .ig-highlight-grey}

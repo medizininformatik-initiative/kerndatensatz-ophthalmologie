@@ -15,8 +15,8 @@
 
 # ImplementationGuide.title
 #: ImplementationGuide.title
-msgid "MII Implementation Guide {{MODULE_TITLE}}"
-msgstr "MII Implementierungsleitfaden {{MODULE_TITLE}}"
+msgid "MII Implementation Guide Ophthalmologie"
+msgstr "MII Implementierungsleitfaden Ophthalmologie"
 
 # ImplementationGuide.definition.page.title
 #: ImplementationGuide.definition.page.title

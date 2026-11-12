@@ -9,14 +9,14 @@
 > *optional*. Entscheiden Sie für Ihr Modul: Seite **behalten** — Inhalte
 > ausfüllen und dieses Banner samt `OPTIONAL-PAGE`-Marker-Kommentar löschen (in
 > dieser Datei UND in der englischen Quellseite) — oder Seite **entfernen**,
-> nach der Schritt-für-Schritt-Anleitung in [`docs/optional-pages.md`](https://github.com/{{GITHUB_ORG}}/{{REPO_NAME}}/blob/main/docs/optional-pages.md) dieses
+> nach der Schritt-für-Schritt-Anleitung in [`docs/optional-pages.md`](https://github.com/medizininformatik-initiative/kerndatensatz-ophthalmologie/blob/main/docs/optional-pages.md) dieses
 > Repositories. Ein Release darf dieses Banner nicht enthalten
 > (Konventions-Check M9).
 {: .ig-highlight .ig-highlight-grey}
 
 ### Extensions
 
-Diese Seite listet die FHIR-Extensions, die das Modul **{{MODULE_TITLE}}**
+Diese Seite listet die FHIR-Extensions, die das Modul **Ophthalmologie**
 definiert (Namenskonvention `MII_EX_<Modul>_<Name>`). Extensions transportieren
 Informationen, die die Basis-Ressourcen und Profile nicht ausdrücken können; die
 Profile, die sie verwenden, stehen auf der Seite [Profile](profiles.html).
